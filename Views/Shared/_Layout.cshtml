@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="@Angular2.Properties.Resources.ResourceManager.GetString("Language")">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <base href="~/" />
+
+    <meta name="description" content="@Angular2.Properties.Resources.ResourceManager.GetString("Description")">
+    <meta name="keywords" content="@Angular2.Properties.Resources.ResourceManager.GetString("Keywords")">
+    <meta name="author" content="@Angular2.Properties.Resources.ResourceManager.GetString("Author")">
+
+    <link rel="shortcut icon" href="~/favicon.ico">
+    <link rel="stylesheet" href="~/dist/bootstrap.min.css">
+    <link rel="stylesheet" href="~/style.css">
+
+    <script src="~/dist/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    @RenderBody()
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
